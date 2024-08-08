@@ -5,11 +5,17 @@ body {
     align-items: center;
     background-color: rgb(239, 236, 236)  !important;
 }
-.form-container {
+
+.container {
     background-color: white;
-    min-height: 45vh;
-    box-shadow: 0.4em 0.4em 0.9em black;
 }
-.form-container h1 {
+
+.container form h1 {
     font-size: 1.8em;
+    color: #0d6efd;
+}
+
+.container form .result {
+    font-size: 1.6em;
+    color: #0d6efd;
 }
