@@ -50,13 +50,13 @@ class Validate {
             valid = false
         }
 
-        if(cleanInitHour.slice(0,2) > 23 || cleanInitHour.slice(0,2) < 0 || cleanInitHour.slice(2,4) > 60 || cleanInitHour.slice(2,4) < 0 || cleanInitHour.slice(4,7) > 60 || cleanInitHour.slice(4,7) < 0) {
+        if(cleanInitHour.slice(0,2) > 23 || cleanInitHour.slice(0,2) < 0 || cleanInitHour.slice(2,4) > 60 || cleanInitHour.slice(2,4) < 0) {
             this.setError(initHour, 'Hora inválida!')
 
             valid = false
         }
 
-        if(cleanLastHour.slice(0,2) > 23 || cleanLastHour.slice(0,2) < 0 || cleanLastHour.slice(2,4) > 60 || cleanLastHour.slice(2,4) < 0|| cleanLastHour.slice(4,7) > 60 || cleanLastHour.slice(4,7) < 0) {
+        if(cleanLastHour.slice(0,2) > 23 || cleanLastHour.slice(0,2) < 0 || cleanLastHour.slice(2,4) > 60 || cleanLastHour.slice(2,4) < 0) {
             this.setError(lastHour, 'Hora inválida!')
 
             valid = false
