@@ -17,7 +17,7 @@ class Calculate {
             minutes += cleanInitHour.slice(5,7) - 60
         }
 
-        const result = document.querySelector('.result').innerHTML = `Tempo | ${this.format(hours)}:${this.format(minutes)}:00`
+        const result = document.querySelector('.result').innerHTML = `${this.format(hours)}:${this.format(minutes)}:00`
         return result
     }
 
