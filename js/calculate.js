@@ -17,14 +17,14 @@ class Calculate {
             minutes += cleanInitHour.slice(5,7) - 60
         }
 
-        const result = document.querySelector('.result').innerHTML = `${this.format(hours)}:${this.format(minutes)}:00`
+        let decimalMinutes = minutes / 60;
+
+        const result = document.querySelector('.result').innerHTML = `Hora padrão = ${this.format(hours)}:${this.format(minutes)} </br> Hora convertida = ${this.format(hours)},${decimalMinutes.toFixed(1).slice(3)}`
         return result
     }
 
     format(time) {
         if(time < 0) time = time * -1
-        if(time < 10) time = `0${time}`
-
 
         return time
     }
