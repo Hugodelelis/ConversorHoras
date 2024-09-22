@@ -1,7 +1,7 @@
 class Nova {
     constructor() {
         this.inputs = document.querySelectorAll('input');
-        this.result = document.querySelector('#result');
+        this.result = document.querySelector('.result');
     }
 
     clearFields() {
