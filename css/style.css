@@ -17,10 +17,15 @@ body {
 
 .container form .result {
     font-size: 1.6em;
-    color: #0d6efd;
+    color: black;
 }
 
 .error-text {
     color: red;
     margin-top: 0.5em;
 }
+
+.form-control {
+    font-weight: bold;
+}
+
