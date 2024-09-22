@@ -19,5 +19,8 @@ class Nova {
     }
 }
 
-const nova = new Nova();
-nova.clearFields();
+document.querySelector('#new').addEventListener('click', (event) => {
+    event.preventDefault();
+    const nova = new Nova();
+    nova.clearFields();
+});
