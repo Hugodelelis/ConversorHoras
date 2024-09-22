@@ -9,7 +9,6 @@ class Validate {
     events() {
         this.form.addEventListener('submit', e => this.handleSubmit(e));
         
-        // Evento de input para validação imediata
         this.initHour.addEventListener('input', () => this.isHourValid());
         this.lastHour.addEventListener('input', () => this.isHourValid());
     }
