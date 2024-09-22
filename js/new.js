@@ -2,12 +2,17 @@ class Nova {
     constructor() {
         this.inputs = document.querySelectorAll('input');
         this.result = document.querySelector('.result');
+        this.form = document.querySelector('#form')
     }
 
     clearFields() {
         this.inputs.forEach(input => {
             input.value = '';
         });
+
+        for(let errorText of this.form.querySelectorAll('.error-text')) {
+            errorText.remove();
+        }
 
         if (this.result) {
             this.result.innerHTML = '';
