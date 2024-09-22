@@ -12,7 +12,7 @@ body {
 
 .container form h1 {
     font-size: 1.8em;
-    color: #50C878;
+    color: black;
 }
 
 .container form .result {
@@ -29,3 +29,8 @@ body {
     font-weight: bold;
 }
 
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.2em;
+}

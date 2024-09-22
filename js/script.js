@@ -3,11 +3,12 @@ class Validate {
         this.form = document.querySelector('#form');
         this.initHour = document.querySelector('#initHour');
         this.lastHour = document.querySelector('#lastHour');
+        this.submitBtn = document.querySelector("#submit")
         this.events();
     }
 
     events() {
-        this.form.addEventListener('submit', e => this.handleSubmit(e));
+        this.submitBtn.addEventListener('click', (e) => this.handleSubmit(e))
         
         this.initHour.addEventListener('input', () => this.isHourValid());
         this.lastHour.addEventListener('input', () => this.isHourValid());

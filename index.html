@@ -8,6 +8,7 @@
     <script src="js/calculate.js" defer></script>
     <script src="js/maskHour.js" defer></script>
     <script src="js/script.js" defer></script>
+    <script src="js/nova.js" defer></script>
     <title>Conversor</title>
 </head>
 <body>
@@ -21,7 +22,10 @@
             <label for="lastHour" class="form-label pt-4">Hora Final:</label>
             <input type="text" class="form-control" id="lastHour" placeholder="00:00" maxlength="5">
             
-            <button class="btn btn-success mt-4 col-12">Converter</button>
+            <div class="buttons">
+                <button class="btn btn-success mt-4 col-6" id="submit">Converter</button>
+                <button class="btn btn-primary mt-4 col-6">Nova</button>
+            </div>
 
             <div class="result mt-3"></div>
         </form>
