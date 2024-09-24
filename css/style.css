@@ -8,10 +8,14 @@ body {
 
 .container {
     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container form h1 {
     font-size: 1.8em;
+    text-align: left;
     color: black;
 }
 
@@ -27,6 +31,7 @@ body {
 
 .form-control {
     font-weight: bold;
+    font-size: 20px;
 }
 
 .buttons {
